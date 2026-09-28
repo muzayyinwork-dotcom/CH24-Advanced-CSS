@@ -1,0 +1,59 @@
+:root {
+    --page-bg: #0F172A;
+    --card-bg: #182033;
+    --border: #334155;
+    --primary-text: #F8FAFC;
+    --secondary-text: #94A3B8;
+    --primary: #7C3AED;
+    --primary-hover: #8B5CF6;
+}
+
+body{
+    background: var(--page-bg);
+    text-align: center;
+    font-family: sans-serif;
+}
+h1, h2{
+    color: var(--primary-text);
+}
+main p{
+    color: var(--secondary-text);
+}
+.container{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.card{
+    width: 300px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    
+
+}
+
+
+button{
+background: linear-gradient(to right, #7C3AED, #06B6D4, #22C55E);
+border: none;
+padding: 10px;
+border-radius: 12px;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+button:hover{
+    background: radial-gradient(#22C55E,#7C3AED,#06B6D4);
+}
